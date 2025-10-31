@@ -63,6 +63,7 @@ body {
   margin: auto;                 
   text-align: center;        /* centered */
   word-break: break-word;
+  min-width: 50%;
 }
 
 /* Image container */
