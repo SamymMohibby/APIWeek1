@@ -69,7 +69,7 @@ body {
 /* Image container */
 .img-container {
   flex: 0 0 200px;           /* fixed column for the image */
-  max-width: 200px;
+  max-width: 50%;
   overflow: hidden;
   border-radius: 8px;
 }
@@ -114,6 +114,6 @@ body {
   .img-container {
     flex: 0 0 auto;
     width: 50%;
-    max-width: 100%;
+    max-width: 50%;
   }
 }
