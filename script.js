@@ -29,7 +29,8 @@ for (let i = 0; i < dogs.length; i++) {
   imageContainer.className = "img-container";
   content.appendChild(imageContainer);
 
-  const img = document.createElement("wiki-img");
+  const img = document.createElement("img");
+  img.className = "wiki-img"
   img.alt = dogs[i];
   imageContainer.appendChild(img);
 
