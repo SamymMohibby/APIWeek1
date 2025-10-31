@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-:root {
-  /* place CSS variables here if needed */
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-/* Better box-sizing across the board */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -25,8 +21,9 @@ body {
 
 /* Card container */
 .wiki-item {
+  box-shadow: 10px 10px;
   max-width: 960px;
-  margin: 12px auto;
+  margin: 0px 30px 0px 30px;
   padding: 16px;
   border: 2px solid #000;
   background-color: #f9fafb;
@@ -43,7 +40,7 @@ body {
   font-weight: 600;
   color: #333;
   margin: 0 0 8px 0;
-  text-align: center;        /* centered */
+  text-align: center;        
 }
 
 /* Content row: text + image */
@@ -52,7 +49,8 @@ body {
   flex: 1 1 100%;
   gap: 16px;
   align-items: flex-start;
-  flex-wrap: wrap;           /* stack nicely on small screens */
+  flex-wrap: wrap;
+  padding: 16px;
 }
 
 /* Centered text */
@@ -61,7 +59,7 @@ body {
   font-size: 16px;
   color: #555;
   line-height: 1.6;
-  margin: 0;                 /* remove extra bottom/right margins */
+  margin: 0;                 
   text-align: center;        /* centered */
   word-break: break-word;
 }
@@ -75,24 +73,36 @@ body {
 }
 
 /* Image */
-.img-container img {
+.wiki-img {
   width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
 }
-
-@media (min-width: 600px) {
+/*is this for desktop view? */
+@media (min-width: 600px) { 
+  
+  .wiki-item{
+    max-width: none;
+    width: 100vw;
+    margin: 0;
+    padding: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
   .wiki-content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: center;
   }
 
   .wiki-content .wiki-text {
     text-align: left;
-    width: 50%; 
-
+    width: 80%;
+    text-align: center;
   }
 
   .img-container {
