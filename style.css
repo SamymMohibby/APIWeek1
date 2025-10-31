@@ -19,6 +19,10 @@ body {
   background: #fff;
 }
 
+.container {
+  max-width: 960px;
+}
+
 /* Card container */
 .wiki-item {
   max-width: 960px;
