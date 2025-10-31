@@ -113,7 +113,6 @@ body {
 
   .img-container {
     flex: 0 0 auto;
-    width: 50%;
-    max-width: 50%;
+    min-width: 50%;
   }
 }
